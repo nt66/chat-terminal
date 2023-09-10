@@ -20,4 +20,4 @@ coverage
 !.vscode/extensions.json
 
 # Environment variables files
-/service/.env
+.env

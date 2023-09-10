@@ -10,7 +10,7 @@
 ## 开发过程
 ### 1.初始环境搭建
 - npm init
-### 2.官网api文档简洁
+### 2.官网api文档简介
 - openai 安装
 - new openai 示例实践
 - dotenv
