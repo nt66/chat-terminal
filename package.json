@@ -3,16 +3,26 @@
   "version": "1.0.0",
   "description": "用openAI做一个chat terminal",
   "main": "index.js",
+  "bin": "./dist/bundler.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c rollup.config.js",
+    "dev": "node dist/bundler.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "openai": "^4.4.0",
     "colors": "^1.4.0",
     "dotenv": "^16.3.1",
+    "openai": "^4.4.0",
+    "ora": "^7.0.1",
     "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "rollup": "^3.29.1",
+    "rollup-plugin-add-shebang": "^0.3.1",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0"
   },
   "type": "module"
 }
